@@ -1,5 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assets/images/job hunting.jpg'
+import { useContext } from 'react';
+import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Navbar = () => {
     const NavLinks = <>
@@ -10,6 +12,19 @@ const Navbar = () => {
         <li><NavLink to='/myJobs'>My Jobs</NavLink></li>
         <li><NavLink to='/blogs'>Blogs</NavLink></li>
     </>
+
+    const { logOut, user } = useContext(AuthContext);
+
+    const handleLogout = () => {
+        logOut()
+            .then(result => {
+                console.log('Noman', result.user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
     return (
         <div className="navbar bg-gray-100 rounded">
             <div className="navbar-start">
@@ -32,18 +47,21 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <div className="dropdown dropdown-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </label>
-                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-32">
-                        <li><a>Profile</a></li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
-                </div>
+                {user ?
+                    <div className="dropdown dropdown-end">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </label>
+                        <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-32">
+                            <li><a>Profile</a></li>
+                            <li><a>Settings</a></li>
+                            <li><Link to='/' onClick={handleLogout}>Logout</Link></li>
+                        </ul>
+                    </div>
+                    : <button className='btn btn-ghost'><Link to='/login'>Log In</Link></button>
+                }
             </div>
         </div>
     );
