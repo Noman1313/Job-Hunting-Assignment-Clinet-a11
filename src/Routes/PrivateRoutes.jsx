@@ -3,11 +3,12 @@ import { AuthContext } from "../Providers/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoutes = ({children}) => {
-    const {user, loader} = useContext(AuthContext);
+    const {user, loading} = useContext(AuthContext);
+    console.log(user,loading);
 
     const location = useLocation();
 
-    if(loader){
+    if(loading){
         return <span className="loading loading-dots loading-lg"></span>
     }
 
