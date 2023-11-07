@@ -1,6 +1,7 @@
 import logo from '../../../assets/images/job hunting.jpg'
 
 const Footer = () => {
+    
     return (
         <div>
             <footer className="footer p-10 bg-base-200  rounded-t-md">
