@@ -1,0 +1,93 @@
+[
+    {
+      "Name": "John Doe",
+      "Job_Title": "Software Engineer",
+      "Job_Posting_Date": "2023-03-15",
+      "Application_Deadline": "2023-04-15",
+      "Salary_Range": "$60,000 - $80,000",
+      "Job_Applicants_Number": 50,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Alice Smith",
+      "Job_Title": "Marketing Manager",
+      "Job_Posting_Date": "2023-02-20",
+      "Application_Deadline": "2023-03-20",
+      "Salary_Range": "$50,000 - $70,000",
+      "Job_Applicants_Number": 35,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Robert Johnson",
+      "Job_Title": "Data Analyst",
+      "Job_Posting_Date": "2023-04-10",
+      "Application_Deadline": "2023-05-10",
+      "Salary_Range": "$55,000 - $75,000",
+      "Job_Applicants_Number": 45,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Emily Davis",
+      "Job_Title": "Graphic Designer",
+      "Job_Posting_Date": "2023-01-25",
+      "Application_Deadline": "2023-02-25",
+      "Salary_Range": "$40,000 - $60,000",
+      "Job_Applicants_Number": 30,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Michael Wilson",
+      "Job_Title": "Accountant",
+      "Job_Posting_Date": "2023-03-05",
+      "Application_Deadline": "2023-04-05",
+      "Salary_Range": "$45,000 - $65,000",
+      "Job_Applicants_Number": 40,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Sarah Brown",
+      "Job_Title": "Sales Representative",
+      "Job_Posting_Date": "2023-02-15",
+      "Application_Deadline": "2023-03-15",
+      "Salary_Range": "$50,000 - $70,000",
+      "Job_Applicants_Number": 38,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "James Lee",
+      "Job_Title": "HR Specialist",
+      "Job_Posting_Date": "2023-04-01",
+      "Application_Deadline": "2023-05-01",
+      "Salary_Range": "$45,000 - $65,000",
+      "Job_Applicants_Number": 42,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Linda Anderson",
+      "Job_Title": "Web Developer",
+      "Job_Posting_Date": "2023-02-10",
+      "Application_Deadline": "2023-03-10",
+      "Salary_Range": "$55,000 - $75,000",
+      "Job_Applicants_Number": 48,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "David Clark",
+      "Job_Title": "Product Manager",
+      "Job_Posting_Date": "2023-03-20",
+      "Application_Deadline": "2023-04-20",
+      "Salary_Range": "$70,000 - $90,000",
+      "Job_Applicants_Number": 55,
+      "View_Details_Button": "Details"
+    },
+    {
+      "Name": "Karen Turner",
+      "Job_Title": "Customer Support Specialist",
+      "Job_Posting_Date": "2023-01-30",
+      "Application_Deadline": "2023-02-28",
+      "Salary_Range": "$40,000 - $55,000",
+      "Job_Applicants_Number": 28,
+      "View_Details_Button": "Details"
+    }
+  ]
+  
