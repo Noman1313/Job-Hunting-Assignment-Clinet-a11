@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import toast from "react-hot-toast";
 
 const AddJob = () => {
     const { user } = useContext(AuthContext)
@@ -39,6 +40,9 @@ const AddJob = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if(data.insertedId){
+                    toast.success('Job post successfully')
+                }
             })
 
     }
