@@ -9,9 +9,9 @@ const AppliedJobs = () => {
 
     const [jobs, setJobs] = useState([])
 
-    const url = `http://localhost:5000/applyJobs?email=${user.email}`
+    const url = `https://job-hunting-assignment-server.vercel.app/applyJobs?email=${user.email}`
     useEffect(() => {
-        fetch(url)
+        fetch(url, {credentials: 'include'})
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [url])
@@ -19,7 +19,7 @@ const AppliedJobs = () => {
     const handleDelete = id => {
         const proceed = confirm('Are you suer to delete')
         if (proceed) {
-            fetch(`http://localhost:5000/applyJobs/${id}`, {
+            fetch(`https://job-hunting-assignment-server.vercel.app/applyJobs/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

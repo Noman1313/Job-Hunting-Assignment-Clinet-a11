@@ -15,7 +15,7 @@ const JobDetails = () => {
         const apply = { Name, Job_Title, Job_Posting_Date, Salary_Range, email }
         console.log(apply);
 
-        fetch('http://localhost:5000/applyJobs', {
+        fetch('https://job-hunting-assignment-server.vercel.app/applyJobs', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
